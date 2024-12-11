@@ -1,4 +1,4 @@
-// File: /Users/nirekshetty/WebstormProjects/ContractualDatabase/ContractualDatabse/ContractualDatabase/Contractual/Contractual/app/(default)/page.tsx
+// File: C:\Users\hocke\OneDrive\Documents\GitHub\ContractualSearch_Hosted\app\(default)\page.tsx
 import * as entry from '../../../../app/(default)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

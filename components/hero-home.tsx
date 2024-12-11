@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import Papa from 'papaparse';
+import Papa, { ParseResult } from 'papaparse';
 import { FaUser, FaCalendarAlt, FaDollarSign, FaMapMarkerAlt, FaTools, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Logo from "@/components/ui/logo";
 import { FaEnvelope } from 'react-icons/fa';
@@ -30,9 +30,10 @@ const SearchBar: React.FC = () => {
             const data = await response.text();
             return new Promise<any>((resolve, reject) => {
                 Papa.parse(data, {
-                    complete: (result) => resolve(result.data),
-                    error: (error) => reject(error)
+                    complete: (result: any) => resolve(result.data),
+                    error: (error: any) => reject(error)
                 });
+                
             });
         };
 
