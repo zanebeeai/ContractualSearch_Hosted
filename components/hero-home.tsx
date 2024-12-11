@@ -54,7 +54,7 @@ const SearchBar: React.FC = () => {
                     companySize: row[9],
                     distance: row[10],
                     action: "Open",
-                    link:row[63]
+                    link: row[63]
                 }));
                 setContractsData(contractsData);
             })
@@ -249,9 +249,8 @@ const SearchBar: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-700 mb-4">
                             <FaCalendarAlt /> Publication Date: {contract.location}
                         </div>
-                        <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-green-500 transition-colors duration-300 font-medium focus:outline-none" >
+                        <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-green-500 transition-colors duration-300 font-medium focus:outline-none">
                             <a href={contract.link}>{contract.action}</a>
-
                         </button>
                     </div>
                 ))}
